@@ -52,7 +52,7 @@ config.options = {
 		todo = "rose",
 
 		git_add = "foam",
-		git_change = "rose",
+		git_change = "gold",
 		git_delete = "love",
 		git_dirty = "rose",
 		git_ignore = "muted",

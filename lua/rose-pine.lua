@@ -33,9 +33,9 @@ local function set_highlights()
 		["@method"] = { fg = palette.rose },
 		["@namespace"] = { link = "Include" },
 		["@number"] = { link = "Number" },
-		["@parameter"] = { fg = palette.iris, italic = styles.italic },
+		["@parameter"] = { fg = palette.text, italic = styles.italic },
 		["@preproc"] = { link = "PreProc" },
-		["@punctuation"] = { fg = palette.subtle },
+		["@punctuation"] = { fg = palette.muted },
 		["@punctuation.bracket"] = { link = "@punctuation" },
 		["@punctuation.delimiter"] = { link = "@punctuation" },
 		["@punctuation.special"] = { link = "@punctuation" },
@@ -216,11 +216,11 @@ local function set_highlights()
 		SpecialComment = { fg = palette.iris },
 		Statement = { fg = palette.pine, bold = styles.bold },
 		StorageClass = { fg = palette.foam },
-		String = { fg = palette.gold },
+		String = { fg = palette.leaf },
 		Structure = { fg = palette.foam },
-		Tag = { fg = palette.foam },
+		Tag = { fg = palette.lake },
 		Todo = { fg = palette.rose, bg = palette.rose, blend = 20 },
-		Type = { fg = palette.foam },
+		Type = { fg = palette.pine },
 		TypeDef = { link = "Type" },
 		Underlined = { fg = palette.iris, underline = true },
 
@@ -238,9 +238,9 @@ local function set_highlights()
 		htmlH5 = { link = "markdownH5" },
 		htmlItalic = { italic = styles.italic },
 		htmlLink = { link = "markdownUrl" },
-		htmlTag = { fg = palette.subtle },
+		htmlTag = { fg = palette.muted },
 		htmlTagN = { fg = palette.text },
-		htmlTagName = { fg = palette.foam },
+		htmlTagName = { fg = palette.lake },
 
 		markdownDelimiter = { fg = palette.subtle },
 		markdownH1 = { fg = groups.h1, bold = styles.bold },
@@ -274,7 +274,7 @@ local function set_highlights()
 		--- Identifiers
 		["@variable"] = { fg = palette.text, italic = styles.italic },
 		["@variable.builtin"] = { fg = palette.love, bold = styles.bold },
-		["@variable.parameter"] = { fg = palette.iris, italic = styles.italic },
+		["@variable.parameter"] = { fg = palette.text, italic = styles.italic },
 		["@variable.member"] = { fg = palette.foam },
 
 		["@constant"] = { fg = palette.gold },
@@ -310,14 +310,14 @@ local function set_highlights()
 		-- ["@type.qualifier"] = {},
 
 		-- ["@attribute"] = {},
-		["@property"] = { fg = palette.foam, italic = styles.italic },
+		["@property"] = { fg = palette.love, italic = styles.italic },
 
 		--- Functions
-		["@function"] = { fg = palette.rose },
+		["@function"] = { fg = palette.foam },
 		["@function.builtin"] = { fg = palette.rose, bold = styles.bold },
 		-- ["@function.call"] = {},
 		["@function.macro"] = { link = "Function" },
-		["@function.method"] = { fg = palette.rose },
+		["@function.method"] = { fg = palette.lake },
 		["@function.method.call"] = { fg = palette.iris },
 
 		["@constructor"] = { fg = palette.foam },
@@ -340,9 +340,9 @@ local function set_highlights()
 		["@keyword.directive.define"] = { fg = palette.iris },
 
 		--- Punctuation
-		["@punctuation.delimiter"] = { fg = palette.subtle },
-		["@punctuation.bracket"] = { fg = palette.subtle },
-		["@punctuation.special"] = { fg = palette.subtle },
+		["@punctuation.delimiter"] = { fg = palette.muted },
+		["@punctuation.bracket"] = { fg = palette.muted },
+		["@punctuation.special"] = { fg = palette.muted },
 
 		--- Comments
 		["@comment"] = { link = "Comment" },
@@ -400,7 +400,7 @@ local function set_highlights()
 		["@diff.delta"] = { bg = groups.git_change, blend = 20 },
 
 		["@tag"] = { link = "Tag" },
-		["@tag.attribute"] = { fg = palette.iris },
+		["@tag.attribute"] = { fg = palette.lake },
 		["@tag.delimiter"] = { fg = palette.subtle },
 
 		--- Non-highlighting captures
@@ -509,15 +509,16 @@ local function set_highlights()
 		NeotestTest = { fg = palette.gold },
 		NeotestUnknown = { fg = palette.subtle },
 		NeotestWatching = { fg = palette.iris },
-
 		-- nvim-neo-tree/neo-tree.nvim
-		NeoTreeNormal = { bg = palette.tree_bg },
+		NeoTreeNormal = { bg = palette.tree_bg, fg = palette.palid },
+		NeoTreeNormalNC = { bg = palette.tree_bg, fg = palette.palid },
+		NeoTreeDirectoryIcon = { fg = palette.palid },
+		NeoTreeDirectoryName = { fg = palette.palid },
 		NeoTreeGitAdded = { fg = groups.git_add },
-		NeoTreeNormalNC = { bg = palette.tree_bg },
 		NeoTreeGitConflict = { fg = groups.git_merge },
 		NeoTreeGitDeleted = { fg = groups.git_delete },
 		NeoTreeGitIgnored = { fg = groups.git_ignore },
-		NeoTreeGitModified = { fg = groups.git_dirty },
+		NeoTreeGitModified = { fg = groups.git_change },
 		NeoTreeGitRenamed = { fg = groups.git_rename },
 		NeoTreeGitUntracked = { fg = groups.git_untracked },
 		NeoTreeTabActive = { fg = palette.text, bg = palette.overlay },
@@ -750,7 +751,7 @@ local function set_highlights()
 		NavicIconsObject = { fg = palette.gold },
 		NavicIconsOperator = { fg = palette.subtle },
 		NavicIconsPackage = { fg = palette.muted },
-		NavicIconsProperty = { fg = palette.foam },
+		NavicIconsProperty = { fg = palette.love },
 		NavicIconsString = { fg = palette.gold },
 		NavicIconsStruct = { fg = palette.foam },
 		NavicIconsTypeParameter = { fg = palette.foam },
