@@ -818,12 +818,12 @@ local function set_highlights()
 		MiniHipatternsTodo = { fg = palette.base, bg = groups.hint, bold = styles.bold },
 
 		MiniIconsAzure = { fg = palette.foam },
-		MiniIconsBlue = { fg = palette.pine },
-		MiniIconsCyan = { fg = palette.foam },
+		MiniIconsBlue = { fg = palette.iris },
+		MiniIconsCyan = { fg = palette.lake },
 		MiniIconsGreen = { fg = palette.leaf },
 		MiniIconsGrey = { fg = palette.subtle },
 		MiniIconsOrange = { fg = palette.rose },
-		MiniIconsPurple = { fg = palette.iris },
+		MiniIconsPurple = { fg = palette.pine },
 		MiniIconsRed = { fg = palette.love },
 		MiniIconsYellow = { fg = palette.gold },
 
