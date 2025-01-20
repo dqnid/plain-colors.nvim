@@ -38,7 +38,7 @@ local function set_highlights()
 		["@punctuation"] = { fg = palette.muted },
 		["@punctuation.bracket"] = { link = "@punctuation" },
 		["@punctuation.delimiter"] = { link = "@punctuation" },
-		["@punctuation.special"] = { link = "@punctuation" },
+		["@punctuation.special"] = { fg = palette.foam },
 		["@regexp"] = { link = "String" },
 		["@repeat"] = { link = "Repeat" },
 		["@storageclass"] = { link = "StorageClass" },
@@ -193,10 +193,10 @@ local function set_highlights()
 		Delimiter = { fg = palette.subtle },
 		Error = { fg = palette.love },
 		Exception = { fg = palette.pine },
-		Float = { fg = palette.gold },
+		Float = { fg = palette.rose },
 		Function = { fg = palette.rose },
 		Identifier = { fg = palette.text },
-		Include = { fg = palette.pine },
+		Include = { fg = palette.text },
 		Keyword = { fg = palette.pine },
 		Label = { fg = palette.foam },
 		LspCodeLens = { fg = palette.subtle },
@@ -206,8 +206,8 @@ local function set_highlights()
 		LspReferenceText = { bg = palette.highlight_med },
 		LspReferenceWrite = { bg = palette.highlight_med },
 		Macro = { fg = palette.iris },
-		Number = { fg = palette.gold },
-		Operator = { fg = palette.subtle },
+		Number = { fg = palette.rose },
+		Operator = { fg = palette.muted },
 		PreCondit = { fg = palette.iris },
 		PreProc = { link = "PreCondit" },
 		Repeat = { fg = palette.pine },
@@ -273,7 +273,7 @@ local function set_highlights()
 
 		--- Identifiers
 		["@variable"] = { fg = palette.text, italic = styles.italic },
-		["@variable.builtin"] = { fg = palette.love, bold = styles.bold },
+		["@variable.builtin"] = { fg = palette.rose },
 		["@variable.parameter"] = { fg = palette.text, italic = styles.italic },
 		["@variable.member"] = { fg = palette.foam },
 
@@ -313,10 +313,10 @@ local function set_highlights()
 		["@property"] = { fg = palette.love, italic = styles.italic },
 
 		--- Functions
-		["@function"] = { fg = palette.foam },
-		["@function.builtin"] = { fg = palette.rose, bold = styles.bold },
+		["@function"] = { fg = palette.lake },
+		["@function.builtin"] = { fg = palette.lake },
 		-- ["@function.call"] = {},
-		["@function.macro"] = { link = "Function" },
+		["@function.macro"] = { fg = palette.lake },
 		["@function.method"] = { fg = palette.lake },
 		["@function.method.call"] = { fg = palette.iris },
 
@@ -342,7 +342,7 @@ local function set_highlights()
 		--- Punctuation
 		["@punctuation.delimiter"] = { fg = palette.muted },
 		["@punctuation.bracket"] = { fg = palette.muted },
-		["@punctuation.special"] = { fg = palette.muted },
+		["@punctuation.special"] = { fg = palette.foam },
 
 		--- Comments
 		["@comment"] = { link = "Comment" },
