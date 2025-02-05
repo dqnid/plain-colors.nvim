@@ -185,7 +185,7 @@ local function set_highlights()
 
 		Boolean = { fg = palette.rose },
 		Character = { fg = palette.gold },
-		Comment = { fg = palette.subtle, italic = styles.italic },
+		Comment = { fg = palette.palid, italic = styles.italic },
 		Conditional = { fg = palette.pine },
 		Constant = { fg = palette.gold },
 		Debug = { fg = palette.rose },
@@ -218,7 +218,7 @@ local function set_highlights()
 		StorageClass = { fg = palette.foam },
 		String = { fg = palette.leaf },
 		Structure = { fg = palette.foam },
-		Tag = { fg = palette.lake },
+		Tag = { fg = palette.pine },
 		Todo = { fg = palette.rose, bg = palette.rose, blend = 20 },
 		Type = { fg = palette.pine },
 		TypeDef = { link = "Type" },
@@ -240,7 +240,7 @@ local function set_highlights()
 		htmlLink = { link = "markdownUrl" },
 		htmlTag = { fg = palette.muted },
 		htmlTagN = { fg = palette.text },
-		htmlTagName = { fg = palette.lake },
+		htmlTagName = { fg = palette.pine },
 
 		markdownDelimiter = { fg = palette.subtle },
 		markdownH1 = { fg = groups.h1, bold = styles.bold },
@@ -305,7 +305,7 @@ local function set_highlights()
 
 		--- Types
 		["@type"] = { fg = palette.foam },
-		["@type.builtin"] = { fg = palette.foam, bold = styles.bold },
+		["@type.builtin"] = { fg = palette.foam },
 		-- ["@type.definition"] = {},
 		-- ["@type.qualifier"] = {},
 
@@ -340,9 +340,9 @@ local function set_highlights()
 		["@keyword.directive.define"] = { fg = palette.iris },
 
 		--- Punctuation
-		["@punctuation.delimiter"] = { fg = palette.muted },
-		["@punctuation.bracket"] = { fg = palette.muted },
-		["@punctuation.special"] = { fg = palette.foam },
+		["@punctuation.delimiter"] = { fg = palette.subtle },
+		["@punctuation.bracket"] = { fg = palette.subtle },
+		["@punctuation.special"] = { fg = palette.text },
 
 		--- Comments
 		["@comment"] = { link = "Comment" },
@@ -400,7 +400,7 @@ local function set_highlights()
 		["@diff.delta"] = { bg = groups.git_change, blend = 20 },
 
 		["@tag"] = { link = "Tag" },
-		["@tag.attribute"] = { fg = palette.lake },
+		["@tag.attribute"] = { fg = palette.pine },
 		["@tag.delimiter"] = { fg = palette.subtle },
 
 		--- Non-highlighting captures
@@ -669,7 +669,7 @@ local function set_highlights()
 		TelescopeNormal = { link = "NormalFloat" },
 		TelescopePromptNormal = { link = "TelescopeNormal" },
 		TelescopePromptPrefix = { fg = palette.subtle },
-		TelescopeSelection = { fg = palette.text, bg = palette.overlay },
+		TelescopeSelection = { fg = palette.text, bg = palette.border },
 		TelescopeSelectionCaret = { fg = palette.rose, bg = palette.overlay },
 		TelescopeTitle = { fg = palette.foam, bold = styles.bold },
 
