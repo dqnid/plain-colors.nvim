@@ -9,17 +9,17 @@ local p = require("rose-pine.palette")
 
 return {
 	-- fill = {
-	-- 	fg = "<color-value-here>",
-	-- 	bg = "<color-value-here>",
+	-- 	fg = p.muted,
+	-- 	bg = p.surface,
 	-- },
 	-- background = {
-	-- 	fg = "<color-value-here>",
-	-- 	bg = "<color-value-here>",
+	-- 	fg = p.muted,
+	-- 	bg = p.surface,
 	-- },
-	-- tab = {
-	-- 	fg = "<color-value-here>",
-	-- 	bg = "<color-value-here>",
-	-- },
+	tab = {
+		fg = p.text,
+		bg = p.foam,
+	},
 	tab_selected = {
 		fg = p.text,
 		bg = p.overlay,
@@ -46,8 +46,7 @@ return {
 	},
 	buffer_selected = {
 		fg = p.text,
-		bg = p.surface,
-		bold = true,
+		bg = p.base,
 		italic = true,
 	},
 	-- diagnostic = {
